@@ -1,29 +1,46 @@
 name: 💡 Topic Suggestion
 description: Suggest a topic you'd like us to cover at a future BAUG event.
-title: "[Topic] "
-labels: [topic]
+title: "Topic Suggestion Request"
+labels: ["Topic"]
+projects: ["joshmer2001/6"]
+assignees:
+  - joshmer2001
 body:
+  - type: markdown
+    attributes:
+      value: |
+        👋 Thanks for suggesting a topic! Please fill out the form below so we can better understand your idea.
+
   - type: input
     id: topic_title
     attributes:
-      label: Topic Title
-      description: Give your suggestion a short title
-      placeholder: e.g., Getting Started with Azure DevOps
+      label: Suggested Topic Name
+      description: What is the topic you are suggesting?
+      placeholder: e.g., Getting Started with Azure Container Apps
     validations:
       required: true
 
   - type: textarea
-    id: topic_details
+    id: topic_description
     attributes:
-      label: What is the topic about?
-      description: Describe the topic and why it's valuable for the group.
-      placeholder: Describe the key points or questions you'd like covered.
+      label: Description or Key Points
+      description: Tell us more about what you want covered. This helps us plan the session better.
+      placeholder: e.g., What questions should it answer? Any specific tools or demos?
     validations:
       required: true
 
   - type: input
     id: suggested_speaker
     attributes:
-      label: (Optional) Suggest a speaker
-      description: Know someone who could present this? Let us know.
+      label: Optional: Suggest a Speaker
+      description: Know someone who could speak on this topic? Add their name or org here.
       placeholder: e.g., Jane Doe from Microsoft
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting, you agree to follow our [Code of Conduct](https://example.com).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
