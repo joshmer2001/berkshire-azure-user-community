@@ -24,6 +24,6 @@ body:
   - type: input
     id: suggested_speaker
     attributes:
-      label: Optional: Suggest a speaker
+      label: (Optional) Suggest a speaker
       description: Know someone who could present this? Let us know.
       placeholder: e.g., Jane Doe from Microsoft
