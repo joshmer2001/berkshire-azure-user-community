@@ -1,0 +1,46 @@
+name: 📝 Feedback
+description: Provide feedback or suggestions to help improve BAUG events and content.
+title: "Feedback Submission"
+labels: ["Feedback"]
+projects: ["joshmer2001/6"]
+assignees:
+  - joshmer2001
+body:
+  - type: markdown
+    attributes:
+      value: |
+        🙏 Thank you for taking the time to provide feedback! Please fill out the form below so we can understand your thoughts and improve.
+
+  - type: input
+    id: feedback_summary
+    attributes:
+      label: Summary of Feedback
+      description: Please provide a brief summary of your feedback.
+      placeholder: e.g., More beginner-friendly workshops
+    validations:
+      required: true
+
+  - type: input
+    id: feedback_event
+    attributes:
+      label: Feedback Type
+      description: Please let us know if this is around a specific event, topic, or general feedback.
+      placeholder: e.g., This was for the event around AI on the 01/01/1980.
+    validations:
+      required: true
+
+  - type: input
+    id: feedback_source
+    attributes:
+      label: (Optional) How did you attend or hear about BAUG or a specific event with us?
+      description: This helps us understand our reach and audience.
+      placeholder: e.g., Through a friend, LinkedIn, previous event
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting, you agree to follow our [Code of Conduct](https://example.com).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
