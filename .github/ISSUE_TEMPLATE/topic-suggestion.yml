@@ -1,0 +1,29 @@
+name: 💡 Topic Suggestion
+description: Suggest a topic you'd like us to cover at a future BAUG event.
+title: "[Topic] "
+labels: [topic]
+body:
+  - type: input
+    id: topic_title
+    attributes:
+      label: Topic Title
+      description: Give your suggestion a short title
+      placeholder: e.g., Getting Started with Azure DevOps
+    validations:
+      required: true
+
+  - type: textarea
+    id: topic_details
+    attributes:
+      label: What is the topic about?
+      description: Describe the topic and why it's valuable for the group.
+      placeholder: Describe the key points or questions you'd like covered.
+    validations:
+      required: true
+
+  - type: input
+    id: suggested_speaker
+    attributes:
+      label: Optional: Suggest a speaker
+      description: Know someone who could present this? Let us know.
+      placeholder: e.g., Jane Doe from Microsoft
