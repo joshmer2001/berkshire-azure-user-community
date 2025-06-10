@@ -20,7 +20,7 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: topic_description
     attributes:
       label: Description or Key Points
