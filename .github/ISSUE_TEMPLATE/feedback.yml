@@ -1,6 +1,6 @@
 name: 📝 Feedback
 description: Provide feedback or suggestions to help improve BAUG events and content.
-title: "Feedback Submission"
+title: "Feedback [replace me with a title!]"
 labels: ["Feedback"]
 assignees:
   - joshmer2001
@@ -10,21 +10,25 @@ body:
       value: |
         🙏 Thank you for taking the time to provide feedback! Please fill out the form below so we can understand your thoughts and improve.
 
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: Feedback Type
+      description: Please let us know if this is around a specific event, topic, or general feedback.
+      options:
+        - Specific Event
+        - Venue/Dietary
+        - Topics/Speakers
+        - General/Other
+    validations:
+      required: true
+      
   - type: input
     id: feedback_summary
     attributes:
       label: Summary of Feedback
-      description: Please provide a brief summary of your feedback.
-      placeholder: e.g., More beginner-friendly workshops
-    validations:
-      required: true
-
-  - type: input
-    id: feedback_event
-    attributes:
-      label: Feedback Type
-      description: Please let us know if this is around a specific event, topic, or general feedback.
-      placeholder: e.g., This was for the event around AI on the 01/01/1980.
+      description: Please provide a brief summary of your feedback - if its about a specific event, speakers, or topics, please detail this here.
+      placeholder: e.g., 01/01/2025 Event: Both sessions too complex and too fast-paced
     validations:
       required: true
 
@@ -34,12 +38,3 @@ body:
       label: (Optional) How did you attend or hear about BAUG or a specific event with us?
       description: This helps us understand our reach and audience.
       placeholder: e.g., Through a friend, LinkedIn, previous event
-
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting, you agree to follow our [Code of Conduct](https://example.com).
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
