@@ -2,7 +2,6 @@ name: 💡 Topic Suggestion
 description: Suggest a topic you'd like us to cover at a future BAUG event.
 title: "Topic Suggestion Request"
 labels: ["Topic"]
-projects: ["joshmer2001/6"]
 assignees:
   - joshmer2001
 body:
