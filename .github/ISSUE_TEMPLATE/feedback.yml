@@ -28,7 +28,7 @@ body:
     attributes:
       label: Summary of Feedback
       description: Please provide a brief summary of your feedback - if its about a specific event, speakers, or topics, please detail this here.
-      placeholder: e.g., 01/01/2025 Event: Both sessions too complex and too fast-paced
+      placeholder: e.g., 01/01/2025 Event - Both sessions too complex and too fast-paced
     validations:
       required: true
 
