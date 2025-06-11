@@ -2,7 +2,6 @@ name: 📝 Feedback
 description: Provide feedback or suggestions to help improve BAUG events and content.
 title: "Feedback Submission"
 labels: ["Feedback"]
-projects: ["joshmer2001/6"]
 assignees:
   - joshmer2001
 body:
